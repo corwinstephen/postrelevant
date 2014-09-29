@@ -1,0 +1,29 @@
+#headerbanner.container-fluid
+  #headerbanner-videowrap
+    %video{ width: '100%', autoplay: "autoplay", loop: true }
+      %source{ src: asset_path("homepagevideo.mp4", type: "video/mp4") }
+
+  .container
+    .col-md-10.col-md-offset-1
+      #headerbanner-navlinks
+        %ul
+          %li
+            = link_to "Projects", "#"
+          %li
+            = link_to "About us", "#"
+          %li
+            = link_to "Contact", "#"
+          %li
+            = link_to "Implementation", "#"
+          %li
+            = link_to "A better tomorrow", "#"
+
+      #headerbanner-title.text-center
+        Post Relevant
+
+      #headerbanner-headline.text-center
+        We build <strong>websites</strong> and <strong>technology</strong> for people who believe in <strong>a better tomorrow</strong>.
+
+.container
+  .col-md-12.text-center
+    Let's make something together. What are you working on?

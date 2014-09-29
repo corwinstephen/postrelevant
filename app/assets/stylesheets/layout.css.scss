@@ -1,0 +1,14 @@
+@import 'colors';
+
+a {
+  color:#FFF;
+
+  &:hover {
+    color:$green;
+    text-decoration:none;
+  }
+}
+
+body {
+  font-family:"Century Gothic";
+}
