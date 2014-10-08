@@ -12,6 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.easing
+//= require underscore.js
+//= require underscoreMixins.js
 //= require turbolinks
 //= require bootstrap.min.js
+//= require initializer.js
 //= require_tree .

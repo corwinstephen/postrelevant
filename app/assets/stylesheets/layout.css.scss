@@ -10,5 +10,20 @@ a {
 }
 
 body {
-  font-family:"Century Gothic";
+  background:url("background.jpg") no-repeat;
+  background-position:-750px -750px;
+  font-family:"Brandon Grotesque";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom:40px;
+  font-weight:400;
+}
+
+h1 {
+  font-size:61px;
+}
+
+.margin-top {
+  margin-top:20px;
 }
