@@ -1,5 +1,22 @@
-.container-fluid
-  Nav
+.container-fluid.margin-bottom
+  .col-md-12
+    .nav
+      .col-md-4.col-md-offset-8.text-right.text-center
+        .nav-rightbuttons
+          %ul
+            %li
+              = link_to "Work", "#"
+            %li
+              = link_to "Approach", "#"
+            %li
+              = link_to "Contact", "#"
+
+          .nav-rightbuttons-brackets
+            %span {
+            %span }
+            
+
+    
 
 .container
   .col-md-12
@@ -8,5 +25,5 @@
       %textarea#workingon{type: "text", placeholder: " What are you working on?"}
       .centerbox-line
 
-      .text-right.margin-top
+      .text-right
         %button Continue >

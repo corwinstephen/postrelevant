@@ -24,6 +24,8 @@ h1 {
   font-size:61px;
 }
 
-.margin-top {
-  margin-top:20px;
+@each $side in left, right, top, bottom {
+  .margin-#{$side} {
+    margin-#{$side}:20px;
+  }
 }

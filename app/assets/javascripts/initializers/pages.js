@@ -21,6 +21,31 @@
 
       // // Select the default text box
       // $("#workingon").select();
+
+
+      this._animateBrackets();
+    },
+
+    _animateBrackets: function(){
+      var config = {
+        bracketPadding: 15
+      };
+      var brackets = $(".nav-rightbuttons-brackets");
+
+      var moveBracketsToElement = function(){
+        var $this = $(this);
+        var hoverElementWidth = $this.width();
+        var offsetLeft = $this.position().left;
+        brackets.animate({
+          "width": hoverElementWidth + (config.bracketPadding * 2), 
+          "left": offsetLeft - config.bracketPadding
+        }, 250, "easeOutBack");
+      };
+      
+      var firstElement = $(".nav-rightbuttons ul li").first();
+      moveBracketsToElement.bind(firstElement)();
+
+      $(".nav-rightbuttons ul li").on("mouseover", moveBracketsToElement);
     }
   };
 })(jQuery);
