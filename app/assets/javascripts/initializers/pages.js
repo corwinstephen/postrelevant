@@ -8,8 +8,8 @@
       // var yAsInt = parseInt(originalY.substr(0, originalY.length - 1));
 
       // $(document).mousemove(function(e){
-      //   var amountMovedX = (e.pageX * -1 / 10);
-      //   var amountMovedY = (e.pageY * -1 / 10);
+      //   var amountMovedX = (e.pageX * -1 / 50);
+      //   var amountMovedY = (e.pageY * -1 / 50);
 
       //   var newPosX = (xAsInt + amountMovedX) + "px";
       //   var newPosY = (yAsInt + amountMovedY) + "px";
@@ -23,6 +23,10 @@
       // $("#workingon").select();
 
 
+      this._animateBrackets();
+    },
+
+    contact: function(){
       this._animateBrackets();
     },
 
