@@ -35,4 +35,4 @@ group :doc do
 end
 
 gem 'haml'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
