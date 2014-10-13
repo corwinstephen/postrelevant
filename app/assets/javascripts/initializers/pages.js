@@ -30,6 +30,10 @@
       this._animateBrackets();
     },
 
+    approach: function(){
+      this._animateBrackets();
+    },
+
     _animateBrackets: function(){
       var config = {
         bracketPadding: 15

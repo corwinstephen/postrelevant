@@ -1,25 +1,43 @@
 @import 'colors';
 @import 'widths-and-heights';
 
+.nav-logo {
+  background-color:#efe7da;
+  background:url(image-path('logo.png')) #efe7da no-repeat $height-standard center;
+  background-size:38px 38px;
+  color:$red;
+  display:inline-block;
+  font-family:"Century Gothic";
+  font-size:25px;
+  letter-spacing:-3px;
+  font-weight:bold;
+  height:$height-standard-4;
+  line-height:29px;
+  padding:$height-standard;
+  padding-left:60px;
+}
+
 .nav-rightbuttons {
   position:relative;
-  padding:$height-standard;
+  height:$height-standard-4;
+  line-height:$height-standard-4;
   background-color:#efe7da;
   color:$red;
-  font-size:20px;
+  font-size:25px;
   font-weight:bold;
   text-align:center;
 
   ul {
     position:relative;
     list-style:none;
-    padding:0 $height-standard;
+    padding:0;
     z-index:2;
 
     li {
       position:relative;
       display:inline-block;
       margin-right:40px;
+      z-index:10;
 
       &:last-child {
         margin-right:0;
@@ -51,6 +69,7 @@
 .centerbox {
   padding:50px;
   color:#fff;
+  border-radius:3px;
 
   &.blue {
     background-color:rgba($blue, .95);
@@ -58,6 +77,56 @@
 
   &.green {
     background-color:rgba($green, .95); 
+  }
+
+  &.white {
+    background-color:rgba(#fff, .99);
+
+    h1, h2 {
+      color:$text-dark;
+      margin-top:$height-standard-4;
+      font-weight:bold;
+    }
+
+    p {
+      color:$text-dark;
+      font-size:25px;
+      line-height:50px;
+      margin-top:$height-standard-3;
+    }
+
+    blockquote {
+      border:none;
+      color:$text-dark;
+      font-size:47px;
+      font-style:italic;
+      font-weight:bold;
+      letter-spacing:-3px;
+      line-height:55px;
+      padding:0;
+      text-align:justify;
+      margin:$height-standard-4 0;
+
+      &:first-child {
+        margin-top:0;
+      }
+    }
+  }
+
+  a {
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
+    color:darken($text-dark, 50%);
+
+    &:hover {
+      border-color:$green;
+    }
+  }
+
+  img {
+    position:relative;
+    width:945px;
+    left:-50px;
   }
 
   input[type=text], input[type=email], input[type=tel] {
@@ -101,7 +170,7 @@
   button {
     background:none;
     border:none;
-    font-size: 36px;
+    font-size: 34px;
     outline:none;
 
     &:hover {
