@@ -3,12 +3,13 @@
 .container
   .col-md-offset-1.col-md-10
     .centerbox.green
-      %h1 Rad. Let's get in touch.
-      = form_tag "", autocomplete: :off
+      .padded
+        %h1 Rad. Let's get in touch.
+        = form_tag "", autocomplete: :off
 
-      = text_field_tag "name", nil, placeholder: "Name"
-      = email_field_tag "email", nil, placeholder: "Email"
-      = phone_field_tag "phone", nil, placeholder: "Phone #"
+        = text_field_tag "name", nil, placeholder: "Name"
+        = email_field_tag "email", nil, placeholder: "Email"
+        = phone_field_tag "phone", nil, placeholder: "Phone #"
 
-      .text-right.margin-top-more
-        %button Lezgo >
+        .text-right.margin-top-more
+          %button Lezgo >

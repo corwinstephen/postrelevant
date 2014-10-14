@@ -4,10 +4,11 @@
   .row
     .col-md-offset-1.col-md-10
       .centerbox.blue
-        = form_tag contact_path, autocomplete: :off do |f|
-          %h1 <strong>twopeople</strong> makes web tech for people who believe in a better tomorrow.
-          = text_area_tag "working_on", nil, placeholder: " What are you working on?"
-          .centerbox-line
+        .padded
+          = form_tag contact_path, autocomplete: :off do |f|
+            %h1 <strong>twopeople</strong> makes web tech for people who believe in a better tomorrow.
+            = text_area_tag "working_on", nil, placeholder: " What are you working on?"
+            .centerbox-line
 
-          .text-right
-            %button Continue >
+            .text-right
+              %button Continue >
