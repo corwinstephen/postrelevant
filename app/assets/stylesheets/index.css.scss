@@ -2,28 +2,30 @@
 @import 'widths-and-heights';
 
 .nav-logo {
-  background-color:#efe7da;
-  background:url(image-path('logo.png')) #efe7da no-repeat $height-standard center;
+  background:url(image-path('logo.png')) #fbf3e9 no-repeat $height-standard center;
   background-size:38px 38px;
-  color:$red;
   display:inline-block;
   font-family:"Century Gothic";
-  font-size:25px;
+  font-size:$font-size-standard;
   letter-spacing:-3px;
   font-weight:bold;
   height:$height-standard-4;
   line-height:29px;
   padding:$height-standard;
   padding-left:60px;
+
+  a {
+    color:$text-dark;
+  }
 }
 
 .nav-rightbuttons {
   position:relative;
   height:$height-standard-4;
   line-height:$height-standard-4;
-  background-color:#efe7da;
+  background-color:#fbf3e9;
   color:$red;
-  font-size:25px;
+  font-size:$font-size-standard;
   font-weight:bold;
   text-align:center;
 
@@ -99,7 +101,7 @@
     blockquote {
       border:none;
       color:$text-dark;
-      font-size:47px;
+      font-size:$font-size-standard-3;
       font-style:italic;
       font-weight:bold;
       letter-spacing:-3px;
@@ -135,7 +137,7 @@
     border-bottom:3px solid rgba(#fff, .3);
     display:block;
     width:100%;
-    font-size:34px;
+    font-size:$font-size-standard-2;
     padding:$height-standard 0;
     outline:none;
   }
@@ -144,7 +146,7 @@
     background:none;
     border:none;
     color:#fff;
-    font-size:34px;
+    font-size:$font-size-standard-2;
     font-weight:200;
     outline:none;
     width:100%;
@@ -170,7 +172,7 @@
   button {
     background:none;
     border:none;
-    font-size: 34px;
+    font-size:$font-size-standard-2;
     outline:none;
 
     &:hover {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Postrelevant</title>
+  <title>twopeople</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= render partial: "js/globals" %>
@@ -9,7 +9,9 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="contentwrapper">
+  <%= yield %>
+</div>
 
 </body>
 </html>

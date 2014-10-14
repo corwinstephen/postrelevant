@@ -38,6 +38,10 @@ h2 {
   font-size:$font-size-standard-2;
 }
 
+.contentwrapper {
+  min-height:100%;
+}
+
 @each $side in left, right, top, bottom {
   .margin-#{$side} {
     margin-#{$side}:$height-standard-2;
