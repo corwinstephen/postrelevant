@@ -32,6 +32,25 @@
 
     approach: function(){
       this._animateBrackets();
+      this._scrollBackground();
+    },
+
+    _scrollBackground: function(){
+      var backgroundPosition = $("body").css("background-position-y");
+      var changed = false;
+      var $body = $("body");
+      var $doc = $(document);
+      var updateBackground = function(){
+        if(changed)
+          $body.css("background-position-y", backgroundPosition);
+          changed = false;
+      };
+      var interval = setInterval(updateBackground, 17);
+
+      $doc.scroll(function(){
+        backgroundPosition = $doc.scrollTop() / -6;
+        changed = true;
+      });
     },
 
     _animateBrackets: function(){

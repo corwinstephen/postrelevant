@@ -16,7 +16,7 @@ html {
 
 body {
   background:url(asset-path("background.jpg")) no-repeat;
-  background-position:-100px -100px;
+  background-attachment:fixed;
   font-family:"Brandon Grotesque";
   height:100%;
 }
