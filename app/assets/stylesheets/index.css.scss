@@ -1,6 +1,15 @@
 @import 'colors';
 @import 'widths-and-heights';
 
+.dimmer {
+  background-color:rgba(#000, .05);
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
 .nav-logo {
   background:url(image-path('logo.png')) #fbf3e9 no-repeat $height-standard center;
   background-size:38px 38px;

@@ -42,15 +42,18 @@
       var $doc = $(document);
       var updateBackground = function(){
         if(changed)
-          $body.css("background-position-y", backgroundPosition);
+          $body.css("background-position", "0 " + backgroundPosition + "px");
           changed = false;
       };
-      var interval = setInterval(updateBackground, 17);
+      var interval = setInterval(updateBackground, 14);
 
-      $doc.scroll(function(){
+      var updatePosition = function(){
         backgroundPosition = $doc.scrollTop() / -6;
         changed = true;
-      });
+      };
+
+      updatePosition();
+      $doc.scroll(updatePosition);
     },
 
     _animateBrackets: function(){
@@ -59,8 +62,11 @@
       };
       var brackets = $(".nav-rightbuttons-brackets");
 
+      var $currentElement = firstElement;
+
       var moveBracketsToElement = function(){
         var $this = $(this);
+        $currentElement = $this;
         var hoverElementWidth = $this.width();
         var offsetLeft = $this.position().left;
         brackets.animate({
@@ -73,6 +79,17 @@
       moveBracketsToElement.bind(firstElement)();
 
       $(".nav-rightbuttons ul li").on("mouseover", moveBracketsToElement);
+
+      // Window resize
+      $(window).resize(function(){
+        var hoverElementWidth = $currentElement.width();
+        var offsetLeft = $currentElement.position().left;
+        
+        brackets.css({
+          "width": hoverElementWidth + (config.bracketPadding * 2), 
+          "left": offsetLeft - config.bracketPadding
+        });
+      });
     }
   };
 })(jQuery);
