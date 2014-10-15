@@ -5,11 +5,11 @@
     .centerbox.green
       .padded
         %h1 Rad. Let's get in touch.
-        = form_tag "", autocomplete: :off
+        = form_for ContactSubmission.new, autocomplete: :off do |f|
 
-        = text_field_tag "name", nil, placeholder: "Name"
-        = email_field_tag "email", nil, placeholder: "Email"
-        = phone_field_tag "phone", nil, placeholder: "Phone #"
+          = f.text_field :name, placeholder: "Name"
+          = f.email_field :email, placeholder: "Email"
+          = f.phone_field :phone, placeholder: "Phone #"
 
-        .text-right.margin-top-more
-          %button Lezgo >
+          .text-right.margin-top-more
+            %button Lezgo >
