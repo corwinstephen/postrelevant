@@ -45,7 +45,7 @@
           $body.css("background-position", "0 " + backgroundPosition + "px");
           changed = false;
       };
-      var interval = setInterval(updateBackground, 14);
+      var interval = setInterval(updateBackground, 40);
 
       var updatePosition = function(){
         backgroundPosition = $doc.scrollTop() / -6;

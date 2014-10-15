@@ -4,16 +4,19 @@
   <title>twopeople</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= render partial: "js/globals" %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag "favicon.ico" %>
+  <meta name="keywords" content="rails, ruby on rails, contract, development, developer, web development, los angeles, web app, beautiful" />
+  <meta name="description" content="We're a consulting firm based in Downtown Los Angeles, California. We build web apps, sites, and technology for inspiring people with great ideas." />
 </head>
 <body>
-<div class="dimmer"></div>
+  <%= render partial: "js/globals" %>
+  
+  <div class="dimmer"></div>
 
-<div class="contentwrapper">
-  <%= yield %>
-</div>
+  <div class="contentwrapper">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
