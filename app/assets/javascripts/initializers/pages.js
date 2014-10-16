@@ -79,17 +79,6 @@
       moveBracketsToElement.bind(firstElement)();
 
       $(".nav-rightbuttons ul li").on("mouseover", moveBracketsToElement);
-
-      // Window resize
-      $(window).resize(function(){
-        var hoverElementWidth = $currentElement.width();
-        var offsetLeft = $currentElement.position().left;
-        
-        brackets.css({
-          "width": hoverElementWidth + (config.bracketPadding * 2), 
-          "left": offsetLeft - config.bracketPadding
-        });
-      });
     }
   };
 })(jQuery);

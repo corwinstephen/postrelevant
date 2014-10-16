@@ -1,27 +1,18 @@
 @import 'colors';
 @import 'widths-and-heights';
 
-.dimmer {
-  background-color:rgba(#000, .05);
-  position:fixed;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-}
-
 .nav-logo {
   background:url(image-path('logo.png')) #fbf3e9 no-repeat $height-standard center;
-  background-size:38px 38px;
+  background-size:30px 30px;
   display:inline-block;
   font-family:"Century Gothic";
   font-size:$font-size-standard;
   letter-spacing:-3px;
   font-weight:bold;
-  height:$height-standard-4;
-  line-height:29px;
+  height:55px;
+  line-height:25px;
   padding:$height-standard;
-  padding-left:60px;
+  padding-left:50px;
 
   a {
     color:$text-dark;
@@ -30,24 +21,25 @@
 
 .nav-rightbuttons {
   position:relative;
-  height:$height-standard-4;
-  line-height:$height-standard-4;
-  background-color:#fbf3e9;
+  height:55px;
+  line-height:55px;
   color:$red;
   font-size:$font-size-standard;
   font-weight:bold;
   text-align:center;
 
   ul {
+    display:inline-block;
+    background-color:#fbf3e9;
     position:relative;
     list-style:none;
-    padding:0;
+    padding:0 $height-standard-3;
     z-index:2;
 
     li {
       position:relative;
       display:inline-block;
-      margin-right:40px;
+      margin-right:$height-standard-2;
       z-index:10;
 
       &:last-child {
@@ -82,6 +74,7 @@
   border-radius:3px;
   box-sizing:border-box;
   padding:$height-standard-3 0;
+  font-size:$font-size-standard;
 
   &.blue {
     background-color:rgba($blue, .95);
@@ -93,23 +86,20 @@
 
   &.white {
     background-color:rgba(#fff, .99);
+    color:$text-dark;
 
     h1, h2 {
-      color:$text-dark;
       margin-top:$height-standard-4;
       font-weight:bold;
     }
 
     p {
-      color:$text-dark;
-      font-size:$font-size-standard;
       line-height:$font-size-standard-2;
-      margin-top:$height-standard-3;
+      margin:$height-standard-3 0;
     }
 
     blockquote {
       border:none;
-      color:$text-dark;
       font-size:$font-size-standard-3;
       font-style:italic;
       font-weight:bold;
@@ -121,6 +111,22 @@
 
       &:first-child {
         margin-top:0;
+      }
+    }
+
+    dl {
+      margin:$height-standard-3 0;
+      color:$text-dark;
+      line-height:$font-size-standard-2;
+      border-left:4px solid $blue;
+      padding-left:$height-standard;
+
+      dt {
+
+      }
+
+      dd {
+
       }
     }
   }
