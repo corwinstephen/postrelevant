@@ -24,10 +24,12 @@
 
 
       this._animateBrackets();
+      this._scrollBackground();
     },
 
     contact: function(){
       this._animateBrackets();
+      this._scrollBackground();
     },
 
     approach: function(){

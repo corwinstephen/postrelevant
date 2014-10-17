@@ -205,3 +205,9 @@
   margin-bottom:20px;
   background-color:rgba(#fff, .3);
 }
+
+#footer {
+  height:$height-standard-4*$golden-ratio*$golden-ratio*$golden-ratio;
+  background-color:#333;
+  margin-top:$height-standard-4;
+}
