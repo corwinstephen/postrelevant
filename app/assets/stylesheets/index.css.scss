@@ -28,12 +28,10 @@
       font-family:$font-2;
       border:none;
       font-size:$font-size-standard-3;
-      font-style:italic;
       font-weight:bold;
       letter-spacing:-3px;
-      line-height:55px;
+      line-height:64px;
       padding:0;
-      text-align:justify;
       margin:$height-standard-4 0;
 
       &:first-child {
@@ -49,11 +47,12 @@
       padding-left:$height-standard;
 
       dt {
-
+        font-family:$font-1;
+        margin-bottom:$height-standard;
       }
 
       dd {
-
+        font-family:$font-2;
       }
     }
   }
@@ -77,6 +76,7 @@
     background:none;
     border:none;
     border-bottom:3px solid rgba(#fff, .3);
+    font-family:$font-2;
     display:block;
     width:100%;
     font-size:$font-size-standard-2;
@@ -87,6 +87,7 @@
 
   textarea {
     background:none;
+    font-family:$font-2;
     border:none;
     color:#fff;
     font-size:$font-size-standard-2;
