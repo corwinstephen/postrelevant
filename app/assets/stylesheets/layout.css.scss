@@ -49,14 +49,15 @@ p {
 }
 
 .nav-logo {
-  background:url(image-path('logo.png')) #fbf3e9 no-repeat $height-standard center;
+  border-left:6px solid $text-dark;
+  background:url(image-path('logo.png')) #fbf3e9 no-repeat 10px center;
   background-size:30px 30px;
   display:inline-block;
-  font-size:$font-size-standard-2;
-  letter-spacing:-3px;
+  font-size:30px;
+  letter-spacing:-2px;
   font-weight:bold;
   height:55px;
-  line-height:21px;
+  line-height:20px;
   padding:$height-standard;
   padding-left:50px;
 
