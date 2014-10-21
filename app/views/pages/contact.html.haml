@@ -2,14 +2,26 @@
 
 .container
   .col-md-offset-1.col-md-10
-    .centerbox.green
+    .centerbox.blue
       .padded
-        %h1 Rad. Let's get in touch.
+        %h1
+          - if params[:project].present?
+            Rad. Let's get in touch.
+          - else
+            Let's get in touch.
+          
         = form_for ContactSubmission.new, autocomplete: :off do |f|
 
           = f.text_field :name, placeholder: "Name"
           = f.email_field :email, placeholder: "Email"
           = f.phone_field :phone, placeholder: "Phone #"
+
+          - if params[:project].present?
+            = f.hidden_field :project, value: params[:project]
+          - else
+            .margin-top
+            = text_area_tag "project", nil, placeholder: "Tell us what you're working on!"
+            .centerbox-line
 
           .text-right.margin-top-more
             %button Lezgo >

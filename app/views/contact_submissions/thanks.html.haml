@@ -1,0 +1,28 @@
+= render partial: "pages/nav"
+
+.container
+  .row
+    .col-md-offset-1.col-md-10
+      .centerbox.blue.text-center.thanks
+        .padded
+          .row
+            .col-md-offset-2.col-md-8
+              %h1 Thanks! We'll be in touch.
+
+              %table
+                %tr
+                  %td Name
+                  %td= @submission.name
+
+                %tr
+                  %td Email
+                  %td= @submission.email
+
+                %tr
+                  %td Phone
+                  %td= @submission.phone
+
+                - if @submission.project
+                  %tr
+                    %td Project
+                    %td= @submission.project

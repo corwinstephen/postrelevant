@@ -1,12 +1,15 @@
 class ContactSubmissionsController < ApplicationController
   def create
-    ContactSubmission.create(contact_submission_params)
-    redirect_to root_path
+    @submission = ContactSubmission.create(contact_submission_params)
+    render :thanks
+  end
+
+  def thanks
   end
 
   private
 
   def contact_submission_params
-    params.require(:contact_submission).permit(:name, :email, :phone)
+    params.require(:contact_submission).permit(:name, :email, :phone, :project)
   end
 end
