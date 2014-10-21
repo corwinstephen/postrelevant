@@ -1,5 +1,3 @@
-@import 'colors';
-@import 'widths-and-heights';
 
 a {
   color:#FFF;
@@ -17,7 +15,7 @@ html {
 body {
   background:url(asset-path("background.jpg")) no-repeat;
   background-attachment:fixed;
-  font-family:"Brandon Grotesque";
+  font-family:$font-1;
   height:100%;
 }
 

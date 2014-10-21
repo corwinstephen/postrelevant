@@ -10,6 +10,11 @@
  *
  *= require_self
  *= require bootstrap
- *= require fonts
- *= require_tree .
  */
+
+ @import 'colors';
+ @import 'fonts';
+ @import 'widths-and-heights';
+ 
+ @import 'layout';
+ @import 'index';
