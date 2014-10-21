@@ -5,13 +5,13 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= render partial: "layouts/fonts" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= render partial: "layouts/analytics" %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag "favicon.ico" %>
   <meta name="keywords" content="rails, ruby on rails, contract, development, developer, web development, los angeles, web app, beautiful" />
   <meta name="description" content="We're a consulting firm based in Downtown Los Angeles, California. We build web apps, sites, and technology for inspiring people with great ideas." />
 </head>
 <body>
+  <%= render partial: "layouts/analytics" %>
   <%= render partial: "js/globals" %>
   
   <div class="contentwrapper">
