@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'BrandonGrotesqueRegular';
-  src: url('./fonts/brandon_reg.eot');
-  src: url('./fonts/brandon_reg.eot') format('embedded-opentype'),
-       url('./fonts/brandon_reg.woff') format('woff'),
-       url('./fonts/brandon_reg.ttf') format('truetype'),
-       url('./fonts/brandon_reg.svg#BrandonGrotesqueRegular') format('svg');
+  src: url(asset-path("brandon_reg.eot"));
+  src: url(asset-path("brandon_reg.eot")) format('embedded-opentype'),
+       url(asset-path("brandon_reg.woff")) format('woff'),
+       url(asset-path("brandon_reg.ttf")) format('truetype'),
+       url(asset-path("brandon_reg.svg#BrandonGrotesqueRegular")) format('svg');
 }
 
-$font-1: 'BrandonGrotesqueRegular';
+$font-1: 'BrandonGrotesqueRegular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;

@@ -1,72 +1,4 @@
 
-.nav-logo {
-  background:url(image-path('logo.png')) #fbf3e9 no-repeat $height-standard center;
-  background-size:30px 30px;
-  display:inline-block;
-  font-family:"Century Gothic";
-  font-size:$font-size-standard;
-  letter-spacing:-3px;
-  font-weight:bold;
-  height:55px;
-  line-height:25px;
-  padding:$height-standard;
-  padding-left:50px;
-
-  a {
-    color:$text-dark;
-  }
-}
-
-.nav-rightbuttons {
-  position:relative;
-  height:55px;
-  line-height:55px;
-  color:$red;
-  font-size:$font-size-standard;
-  font-weight:bold;
-  text-align:center;
-
-  ul {
-    display:inline-block;
-    background-color:#fbf3e9;
-    position:relative;
-    list-style:none;
-    padding:0 $height-standard-3;
-    z-index:2;
-
-    li {
-      position:relative;
-      display:inline-block;
-      margin-right:$height-standard-2;
-      z-index:10;
-
-      &:last-child {
-        margin-right:0;
-      }
-
-      a {
-        color:$red;
-      }
-    }
-  }
-}
-
-.nav-rightbuttons-brackets {
-  position:absolute;
-  top:-2px;
-  z-index:1;
-
-  span {
-    &:first-child {
-      float:left;
-    }
-
-    &:last-child {
-      float:right;
-    }
-  }
-}
-
 .centerbox {
   color:#fff;
   border-radius:3px;
@@ -202,10 +134,4 @@
   height:3px;
   margin-bottom:20px;
   background-color:rgba(#fff, .3);
-}
-
-#footer {
-  height:$height-standard-4*$golden-ratio*$golden-ratio*$golden-ratio;
-  background-color:#333;
-  margin-top:$height-standard-4;
 }
