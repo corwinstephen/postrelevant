@@ -13,6 +13,7 @@
 
   &.blue {
     background-color:rgba($blue, .95);
+    letter-spacing:-1px;
   }
 
   &.white {
@@ -29,8 +30,8 @@
       border:none;
       font-size:$font-size-standard-3;
       font-weight:bold;
-      letter-spacing:-3px;
-      line-height:64px;
+      letter-spacing:-1px;
+      line-height:60px;
       padding:0;
       margin:$height-standard-4 0;
 
@@ -45,6 +46,7 @@
       line-height:$font-size-standard-2;
       border-left:4px solid $blue;
       padding-left:$height-standard;
+      font-size:$font-size-standard;
 
       dt {
         font-family:$font-1;

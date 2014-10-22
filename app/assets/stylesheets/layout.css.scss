@@ -40,7 +40,6 @@ p {
   font-family:$font-2;
   margin:$height-standard-2 0;
   font-size:$font-size-standard;
-  line-height:$font-size-standard*1.8;
 }
 
 .contentwrapper {
@@ -128,7 +127,7 @@ p {
   letter-spacing:1px;
 
   .logo {
-    width:25px;
+    width:35px;
     height:35px;
     display:inline-block;
     background:url(image-path('logo.png')) no-repeat;
