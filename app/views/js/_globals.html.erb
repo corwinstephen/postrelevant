@@ -1,4 +1,4 @@
 <script>
-  App.Globals.controllerName = "<%= controller.controller_name %>";
-  App.Globals.actionName = "<%= controller.action_name %>";
+  App.Globals.controllerName = "<%= controller.controller_name.camelize %>";
+  App.Globals.actionName = "<%= controller.action_name.camelize(:lower) %>";
 </script>

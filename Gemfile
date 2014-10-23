@@ -36,3 +36,5 @@ end
 
 gem 'haml'
 gem 'rails_12factor', group: :production
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'

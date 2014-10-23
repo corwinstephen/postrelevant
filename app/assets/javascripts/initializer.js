@@ -1,14 +1,15 @@
 (function($, _){
   window.App = {
     Globals: {},
-    Initializers: {}
+    Initializers: {},
+    Modules: {}
   };
 
   var ready = function(){
-    var controllerName = _.capitalize(App.Globals.controllerName);
+    var controllerName = App.Globals.controllerName;
     var actionName = App.Globals.actionName;
     if(App.Initializers[controllerName] && App.Initializers[controllerName][actionName]){
-      App.Initializers[_.capitalize(App.Globals.controllerName)][App.Globals.actionName]();
+      App.Initializers[App.Globals.controllerName][App.Globals.actionName]();
     }
   };
 
